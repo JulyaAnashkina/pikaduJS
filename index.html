@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pikadu - Главная</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+     <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js" defer></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js" defer></script>
+
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <!-- Создаем шапку сайта -->
+  <header class="header">
+    <div class="header-wrapper">
+      <a href="index.html" class="header-logo">
+        <img src="img/logo.svg" alt="logo: Pikadu" class="header-logo-image"></a>
+      <div class="header-nav">
+        <ul class="header-menu">
+          <li class="header-menu-item"><a href="#" class="header-menu-link">Свежее</a></li>
+          <li class="header-menu-item"><a href="#" class="header-menu-link">Лучшее</a></li>
+          <li class="header-menu-item"><a href="#" class="header-menu-link">Горячее</a></li>
+          <li class="header-menu-item"><a href="#" class="header-menu-link">Подписки</a></li>
+        </ul>
+      </div>
+      <!-- /.header-nav -->
+      <div class="input-group search">
+        <input type="search" class="search-input" placeholder="Поиск по сайту">
+        <button class="search-button">
+          <img src="img/search.svg" alt="icon: search" class="search-icon">
+        </button>
+      </div>
+      <!-- /.input-group -->
+      <a href="#" class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+    <!-- /.header-wrapper -->
+  </header>
+
+  <div class="content">
+    <main class="posts">
+      <section class="post">
+        <div class="post-body">
+          <h2 class="post-title">Заголовок поста с интригой</h2>
+          <p class="post-text">
+            Таким образом укрепление и развитие структуры требуют от нас анализа форм развития. Не следует, однако
+            забывать, что реализация намеченных плановых заданий требуют от нас анализа позиций, занимаемых участниками
+            в отношении поставленных задач. Задача организации, в особенности же
+            консультация с широким активом способствует подготовки и реализации новых предложений. Равным
+            образом новая модель организационной деятельности позволяет оценить значение модели развития.
+          </p>
+          <p class="post-text">
+            Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по
+            разработке существенных финансовых и административных условий. Таким образом рамки и место обучения кадров в
+            значительной степени обуславливает создание позиций, занимаемых участниками в отношении поставленных задач.
+          </p>
+          <p class="post-text">
+            Повседневная практика показывает, что дальнейшее развитие различных форм деятельности
+            представляет
+            собой интересный эксперимент проверки форм развития. Товарищи! новая модель организационной
+            деятельности требуют определения и уточнения форм развития. Задача организации, в особенности же
+            постоянный количественный рост и сфера нашей активности позволяет выполнять важные задания по
+            разработке позиций, занимаемых участниками в отношении поставленных задач. Повседневная практика
+            показывает, что дальнейшее развитие различных форм деятельности требуют определения и уточнения
+            соответствующий условий активизации.
+          </p>
+          <div class="tags">
+            <a href="#" class="tag">#горячее</a>
+            <a href="#" class="tag">#свежее</a>
+            <a href="#" class="tag">#мое</a>
+            <a href="#" class="tag">#случайность</a>
+          </div>
+          <!-- /.tags -->
+        </div>
+        <!-- /.post-body -->
+        <div class="post-footer">
+          <div class="post-buttons">
+            <button class="post-button likes">
+              <svg class="icon icon-like" width="19" height="20">
+                <use xlink:href="img/icons.svg#like"></use>
+              </svg>
+              <span class="likes-counter">26</span>
+            </button>
+            <button class="post-button comments">
+              <svg class="icon icon-comment" width="21" height="21">
+                <use xlink:href="img/icons.svg#comment"></use>
+              </svg>
+              <span class="comments-counter">157</span>
+            </button>
+            <button class="post-button save">
+              <svg class="icon icon-save" width="19" height="19">
+                <use xlink:href="img/icons.svg#save"></use>
+              </svg>
+            </button>
+            <button class="post-button share">
+              <svg class="icon icon-share" width="17" height="19">
+                <use xlink:href="img/icons.svg#share"></use>
+              </svg>
+            </button>
+          </div>
+          <!-- /.post-buttons -->
+          <div class="post-author">
+            <div class="author-about">
+              <a href="#" class="author-username">arteislamov</a>
+              <span class="post-time">5 минут назад</span>
+            </div>
+            <a href="#" class="author-link">
+              <img src="img/avatar.jpg" alt="avatar" class="author-avatar"></a>
+          </div>
+          <!-- /.post-after -->
+        </div>
+        <!-- /.post-footer -->
+      </section>
+      <section class="post">
+        <div class="post-body">
+          <h2 class="post-title">Заголовок поста сказки</h2>
+          <p class="post-text">
+            Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты.
+          </p>
+          <p class="post-text">
+            Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Ее вопрос
+            власти всеми залетают заманивший свое взобравшись переписывается взгляд мир до рыбными
+            возвращайся подзаголовок страну, запятой языкового дал решила оксмокс сбить города выйти
+            рукописи текст собрал. Грамматики предупредила своих, великий, своего большого это ведущими,
+            вопрос его диких которой агентство!
+          </p>
+          <div class="tags">
+            <a href="#" class="tag">#горячее</a>
+            <a href="#" class="tag">#свежее</a>
+            <a href="#" class="tag">#мое</a>
+            <a href="#" class="tag">#случайность</a>
+          </div>
+          <!-- /.tags -->
+        </div>
+        <!-- /.post-body -->
+        <div class="post-footer">
+          <div class="post-buttons">
+            <button class="post-button likes">
+              <svg class="icon icon-like" width="19" height="20">
+                <use xlink:href="img/icons.svg#like"></use>
+              </svg>
+              <span class="likes-counter">26</span>
+            </button>
+            <button class="post-button comments">
+              <svg class="icon icon-comment" width="21" height="21">
+                <use xlink:href="img/icons.svg#comment"></use>
+              </svg>
+              <span class="comments-counter">157</span>
+            </button>
+            <button class="post-button save">
+              <svg class="icon icon-save" width="19" height="19">
+                <use xlink:href="img/icons.svg#save"></use>
+              </svg>
+            </button>
+            <button class="post-button share">
+              <svg class="icon icon-share" width="17" height="19">
+                <use xlink:href="img/icons.svg#share"></use>
+              </svg>
+            </button>
+          </div>
+          <!-- /.post-buttons -->
+          <div class="post-author">
+            <div class="author-about">
+              <a href="#" class="author-username">arteislamov</a>
+              <span class="post-time">5 минут назад</span>
+            </div>
+            <a href="#" class="author-link">
+              <img src="img/avatar2.jpg" alt="avatar" class="author-avatar"></a>
+          </div>
+          <!-- /.post-after -->
+        </div>
+        <!-- /.post-footer -->
+      </section>
+    </main>
+    <!-- /.posts -->
+    <form action="#" class="add-post">
+      <input type="text" name="title" class="add-title" placeholder="Заголовок поста">
+      <textarea name="text" id="text" class="add-text" placeholder="Текст вашего поста"></textarea>
+      <input type="text" name="tags" class="add-tags" placeholder="Добавьте теги через запятую">
+      <div class="add-buttons">
+        <button type="submit" class="button add-button">
+          <svg class="icon icon-fire">
+            <use xlink:href="img/icons.svg#fire"></use>
+          </svg>
+          Опубликовать пост
+        </button>
+      </div>
+    </form>
+    <aside class="sidebar">
+      <div class="login">
+        <form class="login-form">
+          <h2 class="login-title">Автоизация</h2>
+
+          <input type="email" class="login-input login-email" name="email" minlength="3" required
+            placeholder="Введите email">
+          <input type="password" class="login-input login-password" name="password" minlength="3" required
+            placeholder="Введите пароль">
+
+          <a href="#" class="login-forget">Забыли пароль?</a>
+          <button class="login-signin button" type="submit">Войти</button>
+          <a href="#" class="login-signup">Регистрация</a>
+        </form>
+      </div>
+
+      <div class="user">
+        <div class="user-container">
+          <a href="#" class="user-info">
+            <img width="40" height="40" src="img/avatar2.jpg" alt="photo: user" class="user-avatar">
+            <span class="user-name">islamovartem</span>
+          </a>
+          <!-- /.user-ifo -->
+          <a href="#" class="edit">
+            <img src="img/edit.svg" alt="Редактировать" class="icon icon-edit">
+          </a>
+          <!-- /.edit -->
+          <a href="#" class="exit">
+            <svg class="icon icon-exit">
+              <use xlink:href="img/icons.svg#exit"></use>
+            </svg>
+          </a>
+          <!-- /.exit -->
+        </div>
+        <!-- /.user-container -->
+        <form class="edit-container">
+          <h2 class="edit-title">Редактировать</h2>
+          <label class="edit-label">Логин
+            <input type="text" class="edit-input edit-username" name="username" minlength="3" placeholder="логин"
+              required>
+          </label>
+          <label class="edit-label">Аватар
+            <input type="text" class="edit-input edit-avatar" name="avatar" placeholder="URL-аватар">
+          </label>
+          <button class="edit-btn button">Сохранить</button>
+        </form>
+        <!-- /.edit-container -->
+      </div>
+      <!-- /.user -->
+      <nav class="sidebar-nav">
+        <ul class="sidebar-menu">
+          <li class="sidebar-menu-item">
+            <a href="#" class="sidebar-menu-link">Ответы</a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#" class="sidebar-menu-link">Комментарии</a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#" class="sidebar-menu-link active">Оценки</a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#" class="sidebar-menu-link">Сохраннёное</a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#" class="sidebar-menu-link">Подписки</a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#" class="sidebar-menu-link">Заметки</a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#" class="sidebar-menu-link">Игнор-лист</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-nav -->
+      <a href="new-post.html" class="button button-new-post">
+        <svg class="icon icon-fire">
+          <use xlink:href="img/icons.svg#fire"></use>
+        </svg>
+        Опубликовать пост
+      </a>
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">Комментарий дня</h2>
+        </div>
+        <!-- /.card-header -->
+        <div class="card-body">
+          <a href="#" class="card-body-title">Как обмануть банкомат, если вы хотите снять больше наличных</a>
+          <p class="card-text">Таким образом укрепление и развитие структуры требуют от нас анализа форм
+            развития. Не следует, однако забывать, что реализация намеченных плановых заданий требуют от нас
+            анализа позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в
+            особенности же консультация...</p>
+        </div>
+      </div>
+      <!-- /.card -->
+      <a href="#" class="promo"></a>
+      <!-- /.promo -->
+    </aside>
+    <!-- /.sidebar -->
+  </div>
+  <!-- /.content -->
+</body>
+
+</html>
